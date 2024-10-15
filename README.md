@@ -2,7 +2,9 @@ https://fern-shy.github.io
 
 ******** ABOUT ********
 
-Your actions define who you are
+Your actions define you
+
+
 So who are you really?
 
 An interactive verse submission website designed by Fern (@fern_shy).
