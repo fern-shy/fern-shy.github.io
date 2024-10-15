@@ -17,7 +17,7 @@
     height: 315px;
 }
 #title {
-    width: 80%; /* Make the image take up 80% of the parent container's width */
+    width: 100%; /* Make the image take up 80% of the parent container's width */
     max-width: 600px; /* Set a maximum width to prevent it from getting too large */
     height: auto; /* Maintain aspect ratio */
     margin-top: 20px;
