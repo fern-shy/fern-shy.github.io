@@ -28,22 +28,9 @@ And a one-page interactive experience where users can preview / download the ins
 
 ******** TO-DO ********
 
-1: create / implement all background gifs for each video
+1: update header with all neccessary links to engage properly (soundcloud playlist, socials for both lush soma and fern shy) 
 
 
-2: update header with all neccessary links to engage properly (soundcloud playlist, socials for both lush soma and fern shy)
-
-
-3: update header to contain navigation for downloading all the files and verse submission
-
-
-4: update js to add more interactive pop ups
-
-
-5: push concept further ... how much can i animate before it gets sickening ? 
-
-
-6: update when full album is done
-
+2: update header to contain navigation for downloading all the files and verse submission
 
 

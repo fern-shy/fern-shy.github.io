@@ -9,10 +9,18 @@
 </head>
 <body>
 
+    <header> 
+        <nav>
+            <div class="icons">
+                <a href="https://www.instagram.com/fern_shy/"><img src="img/10.17.24 fern.png" alt="fern"></a>
+                <a href="https://www.instagram.com/lushsoma/"><img src="img/10.17.24 lush.png" alt="lush"></a>
+                <a href="https://soundcloud.com/fern_shy/sets/pink"> <img src="img/10.17.24 sc.png" alt="soundcloud"></a>
+            </div>
+        </nav>
+    </header>
+
     <div class="title-container">
-        <a href="mailto:who.r.you.rlly@gmail.com">
-            <img src="10.10.24 really.png" id="title" alt="Submit Your Verse">
-        </a>
+            <img src="img/who_are_you_really.gif" id="title" alt="Submit Your Verse">
     </div>
 
     <div id="container">
@@ -26,11 +34,11 @@
         </section>
 
         <section id="guy">
-            <iframe class="youtube-frame" src="https://www.youtube.com/embed/WcWfmS8LuPA" frameborder="0" allowfullscreen></iframe>
+            <iframe class="youtube-frame" src="https://www.youtube.com/embed/PlEYDi1k8WQ" frameborder="0" allowfullscreen></iframe>
         </section>
 
         <section id="something">
-            <iframe class="youtube-frame" src="https://www.youtube.com/embed/o6XQ3-LVYYQ" frameborder="0" allowfullscreen></iframe>
+            <iframe class="youtube-frame" src="https://www.youtube.com/embed/Ep4S7M--qTc" frameborder="0" allowfullscreen></iframe>
         </section>
 
         <section id="buried">
@@ -42,11 +50,11 @@
         </section>
 
         <section id="hang">
-            <iframe class="youtube-frame" src="https://www.youtube.com/embed/9Gr-UETewSA" frameborder="0" allowfullscreen></iframe>
+            <iframe class="youtube-frame" src="https://www.youtube.com/embed/XpGkyYMliKU" frameborder="0" allowfullscreen></iframe>
         </section>
 
         <section id="pink">
-            <iframe class="youtube-frame" src="https://www.youtube.com/embed/evTC_qnfDv4" frameborder="0" allowfullscreen></iframe>
+            <iframe class="youtube-frame" src="https://www.youtube.com/embed/ddwwKFF0iQY" frameborder="0" allowfullscreen></iframe>
         </section>
 
         <section id="happening">
@@ -59,13 +67,17 @@
 
         <!-- <script src="script.js"></script> !-->
 
-    <div class="submission">
-        <a href="mailto:who.r.you.rlly@gmail.com">
-            <h1>click here to submit</h1>
-        </a>
-    </div>
+        <div class="submit">
+            <a href="mailto:who.r.you.rlly@gmail.com">
+                <img src="img/submit.gif" id="title" alt="Submit Your Verse">
+            </a>
+        </div>
 
+        <script>
+            document.getElementById("title").addEventListener("click", function() {
+                document.querySelector(".submit").scrollIntoView({ behavior: "smooth" });
+            });
+        </script>
         
-
 </body>
 </html>
