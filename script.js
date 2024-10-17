@@ -28,3 +28,4 @@ if (entry.target.id === 'pink') {
     popup.style.padding = '10px';
     document.body.appendChild(popup);
 }
+

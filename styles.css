@@ -14,17 +14,16 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background 2s ease;
 }
 #title {
-    width: 100%; /* Make the image take up 80% of the parent container's width */
-    max-width: 600px; /* Set a maximum width to prevent it from getting too large */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     margin-top: 20px;
     margin-bottom: 50px;
 }
 body {
-    background-image: url('10.08.24 lushsoma25.png');
+    /*background-image: url('10.08.24 lushsoma25.png');*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,13 +42,14 @@ img {
     margin-bottom: -100px;
 
 }
-/* Default backgrounds */
-#candy { background-color: black; }
-#pill { background-color: pink; }
-#guy { background-color: black; }
 
-/* Use these classes for GIF backgrounds */
-.candy-bg { background-image: url('candy.gif'); background-size: cover; }
-.pill-bg { background-image: url('pill.gif'); background-size: cover; }
-.guy-bg { background-image: url('guy.gif'); background-size: cover; }
-
+#candy { background-image: url(candy.gif); background-size: cover; background-position: center; }
+#pill { background-image: url(10.08.24_lushsoma17.png); background-size: cover; background-position: center; }
+#guy { background-image: url(10.08.24_lushsoma9.png); background-size: cover; background-position: center; }
+#something { background-image: url(10.08.24_lushsoma3.png); background-size: cover; background-position: center; }
+#buried { background-image: url(10.08.24_lushsoma.png); background-size: cover; background-position: center; }
+#rotting { background-image: url(10.08.24_lushsoma6.png); background-size: cover; background-position: center; }
+#hang { background-image: url(10.08.24_lushsoma11.png); background-size: cover; background-position: center; }
+#pink { background-image: url(10.08.24_lushsoma26.png); background-size: cover; background-position: center; }
+#happening { background-image: url(10.08.24_lushsoma27.png); background-size: cover; background-position: center; }
+#shyyy { background-image: url(10.08.24_lushsoma25.png); background-size: cover; background-position: center; }
