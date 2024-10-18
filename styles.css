@@ -7,9 +7,9 @@
 }
 .icons {
     display: flex;
-    justify-content: center; /* Center the icons horizontally */
-    align-items: center; /* Align icons vertically */
-    gap: 10px; /* Add some space between icons */
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
 }
 
 .icons img {
@@ -38,7 +38,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 100px;
+    margin-top: 10vh;
     width: 100%;
 }
 
@@ -59,10 +59,96 @@ body {
     height: 315px;
 }
 
+h2{
+    margin-top: -30vh;
+    text-align: center;
+}
+
+h3{
+    margin-left: 5vw;
+    font-weight: normal; /* De-bolds all text in h3 */
+}
+
+/* Hot pink text */
+.hot-pink {
+    color: hotpink;
+}
+
+/* Red text */
+.red-text {
+    color: red;
+}
+
+/* Media query for small screens (like mobile) */
+@media (max-width: 550px) {
+    section {
+        background-size: contain; /* Change background size to fit within mobile screen */
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #container {
+        width: 100%;
+        padding-top: 10vh;
+        margin-bottom: 25vh;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    #title {
+        width: 80vw; /* Make the title image responsive */
+        padding-top: 10vh;
+        margin-bottom: 25vh;
+    }
+
+    .icons img {
+        width: 100px; /* Reduce icon size for mobile */
+    }
+
+    #pink {
+        position: relative;
+        width: 100%;
+        height: 120vh; /* Full viewport height */
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #rotting {
+        position: relative;
+        width: 100%;
+        height: 80vh; /* Full viewport height */
+        margin-left: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #rotting .youtube-frame {
+        width: 312px;
+        height: 315px;
+        margin-top: 12vh;
+    }
+    
+    .submit {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: -10vh;
+        width: 100%;
+        margin-bottom: -30vh;
+    }
+
+}
+
 #candy { background-image: url('img/candy.gif'); background-size: cover; background-position: center; }
 #pill { background-image: url('img/pill.gif'); background-size: cover; background-position: center; }
 #guy { background-image: url('img/guy.gif'); background-size: cover; background-position: center; }
-#something { background-image: url('img/10.11.24\ reach.png'); background-size: cover; background-position: center; }
+#something { background-image: url('img/something.gif'); background-size: cover; background-position: center; }
 #buried { background-image: url('img/buried.gif'); background-size: cover; background-position: center; }
 #rotting { background-image: url('img/rotting.gif'); background-size: cover; background-position: center; }
 #hang { background-image: url('img/hang.gif'); background-size: cover; background-position: center; }
