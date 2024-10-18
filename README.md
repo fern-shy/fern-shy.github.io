@@ -26,11 +26,4 @@ it would be unnecessarily time consuming to have to organize these ourselves.
 This website features a single submission email (who.r.you.rlly@gmail.com) which will be the only location where submissions are reviewed,
 And a one-page interactive experience where users can preview / download the instrumentals and be fully immersed by each one.
 
-******** TO-DO ********
-
-1: update header with all neccessary links to engage properly (soundcloud playlist, socials for both lush soma and fern shy) 
-
-
-2: update header to contain navigation for downloading all the files and verse submission
-
 
