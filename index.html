@@ -5,7 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/favicon.ico">
     <link rel="stylesheet" href="styles.css">
-    <title>your actions define you so who are you really</title>
+    <title>Who Are You Really</title>
+    <style>
+        body {
+          background-color: #000;
+          color: #fff;
+          font-family: Arial, sans-serif;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          text-align: center;
+        }
+        .album-cover {
+          max-width: 80%;
+          height: auto;
+          border: 5px solid #fff;
+        }
+        .countdown {
+          font-size: 2rem;
+          margin-top: 20px;
+        }
+      </style>
     
 </head>
 <body>
@@ -20,7 +43,37 @@
         </nav>
     </header>
 
+    <div class="countdown" id="countdown"></div>
+
+    <img src="img/2.10.25 soon8.png" alt="cover" class="album-cover">
+  
+    <script>
+    function updateCountdown() {
+      const now = new Date();
+      // Set the drop date for February 22 of the current year.
+      const dropDate = new Date(now.getFullYear(), 1, 22); // Month is 0-indexed: 1 = February
+      
+      const diff = dropDate - now;
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+      
+      document.getElementById("countdown").textContent =
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+      
+      // Optionally, show a message once the countdown is complete
+      if (diff < 0) {
+        document.getElementById("countdown").textContent = "OUT NOW";
+      }
+    }
+    
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+    </script>
+
     <div class="title-container">
+            <img
             <img src="img/who_are_you_really.gif" id="title" alt="Submit Your Verse">
     </div>
 
