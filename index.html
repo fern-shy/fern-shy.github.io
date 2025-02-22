@@ -71,30 +71,31 @@
     <img src="img/2.18.25 soonpng.png" alt="cover" class="album-cover">
 
     <script>
-    function updateCountdown() {
-      const now = new Date();
-      // Set the drop date for February 22 of the current year.
-      const dropDate = new Date(now.getFullYear(), 1, 22); // Month is 0-indexed: 1 = February
-      
-      const diff = dropDate - now;
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-      const minutes = Math.floor((diff / (1000 * 60)) % 60);
-      const seconds = Math.floor((diff / 1000) % 60);
-      
-      document.getElementById("countdown").textContent =
-        days + "d " + hours + "h " + minutes + "m " + seconds + "s";
-      
-      // Optionally, show a message once the countdown is complete
-      if (diff < 0) {
-        document.getElementById("countdown").textContent = "Who Are You Really?";
-      }
-    }
-    
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-    </script>
-
+        function updateCountdown() {
+          const now = new Date();
+          // Create drop date as a string locked to midnight EST on Feb 22.
+          // Replace the month and day as needed.
+          const dropDate = new Date(`${now.getFullYear()}-02-22T00:00:00-05:00`);
+          
+          const diff = dropDate - now;
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+          const minutes = Math.floor((diff / (1000 * 60)) % 60);
+          const seconds = Math.floor((diff / 1000) % 60);
+          
+          document.getElementById("countdown").textContent =
+            days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+          
+          // Optionally, show a message once the countdown is complete
+          if (diff < 0) {
+            document.getElementById("countdown").textContent = "Who Are You Really?";
+          }
+        }
+        
+        // Update the countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+      </script>
     <!--
 
     <div class="title-container">
