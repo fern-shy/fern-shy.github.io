@@ -8,5 +8,3 @@ My website
 
 Your Actions Define You
 So Who Are You Really?
-
-
