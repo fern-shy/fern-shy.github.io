@@ -1,19 +1,24 @@
-const sections = document.querySelectorAll('section');
+// Track download button clicks with Plausible when present
+window.addEventListener('DOMContentLoaded', () => {
+    const downloadButton = document.getElementById('download-btn');
+    if (downloadButton) {
+        downloadButton.addEventListener('click', () => {
+            if (window.plausible) {
+                window.plausible('download-drumkit', { props: { source: 'downloads-page' } });
+            }
+        });
+    }
 
-const options = {
-    threshold: 0.5
-};
-
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            // Remove all previous background classes
-            document.body.className = '';
-            document.body.classList.add(`${entry.target.id}-bg`);
-        }
-    });
-}, options);
-
-sections.forEach(section => {
-    observer.observe(section);
+    // Track first interaction with playlist embed (BUY page)
+    const playlistOverlay = document.getElementById('playlist-overlay');
+    if (playlistOverlay) {
+        const fireOnce = () => {
+            if (window.plausible) {
+                window.plausible('playlist-opened');
+            }
+            playlistOverlay.removeEventListener('click', fireOnce);
+            playlistOverlay.style.display = 'none';
+        };
+        playlistOverlay.addEventListener('click', fireOnce);
+    }
 });
