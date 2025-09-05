@@ -21,4 +21,19 @@ window.addEventListener('DOMContentLoaded', () => {
         };
         playlistOverlay.addEventListener('click', fireOnce);
     }
+
+    const homeAudio = document.getElementById('home-audio');
+    if (homeAudio) {
+        // play silently & immediately if the browser allows
+        homeAudio.play().catch(() => {
+            // Otherwise wait for first interaction
+            const startAudio = () => {
+                homeAudio.play().catch(()=>{}); // ignore any errors
+                window.removeEventListener('click', startAudio);
+                window.removeEventListener('touchstart', startAudio);
+            };
+            window.addEventListener('click', startAudio, { once: true });
+            window.addEventListener('touchstart', startAudio, { once: true });
+        });
+    }
 });
