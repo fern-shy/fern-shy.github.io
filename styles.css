@@ -101,7 +101,7 @@ h3{
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding: 12px 16px;
+    padding: 12px 0px;
     background: hotpink;
     backdrop-filter: blur(4px);
     z-index: 10;
@@ -113,6 +113,20 @@ h3{
     font-size: 16px;
     letter-spacing: 0.01em; /* nav text spacing */
     text-transform: uppercase;
+    white-space: nowrap; /* prevent line breaks inside a link */
+}
+
+/* Mobile adjustments: keep nav on one line */
+@media (max-width: 500px) {
+    .site-nav {
+        justify-content: center;
+        gap: 13px;
+        padding-left: 0vw;
+    }
+    .site-nav a {
+        font-size: 3.3vw;
+        letter-spacing: 0.05em; /* tighter */
+    }
 }
 .site-nav a:hover { text-decoration: underline; }
 
