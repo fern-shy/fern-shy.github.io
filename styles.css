@@ -162,7 +162,7 @@ h3{
     width: 312px;
     height: 315px;
     box-sizing: border-box;
-    background: black;
+    background: rgb(255, 83, 175);
     color: white;
     padding: 10px 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -224,7 +224,7 @@ h3{
 @media (max-width: 900px) {
     .downloads-grid { grid-template-columns: repeat(2, 1fr); }
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .downloads-grid { grid-template-columns: 1fr; }
     #playlist-iframe {
         width: 100% !important;
@@ -247,11 +247,11 @@ h3{
     padding-top: 0px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .buy-content {
         flex-direction: column;
         align-items: center;
-        gap: 24px;
+        gap: 10px;
         margin-top: 32px;
     }
 
@@ -263,3 +263,41 @@ h3{
 
     .pricing-box { height: 300px; }
 }
+
+.portfolio-page { justify-content: flex-start; padding-top: 48px; overflow-y:auto; -webkit-overflow-scrolling: touch; }
+
+.portfolio-content { display:flex; flex-direction:row; gap:10px; align-items:flex-start; }
+
+.embed-wrap-soundcloud,
+.portfolio-box { width:300px; height:300px; box-sizing:border-box; }
+.portfolio-box { background: rgb(255, 83, 175); color:white; padding:10px;font-family:Arial,Helvetica,sans-serif; }
+
+@media (max-width:650px){
+  .portfolio-content{flex-direction:column; align-items:center; gap:10px; margin-top:0px;}
+  .embed-wrap-soundcloud,.portfolio-box{width:90vw; max-width:300px; height:300px;}
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    margin-top: 0px;
+    justify-items: center;
+    align-items: start;
+}
+
+.portfolio-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* ensure grid items reuse box sizing */
+.portfolio-grid .embed-wrap-soundcloud,
+.portfolio-grid .portfolio-box { width: 300px; height:300px; }
+
+@media (max-width:650px){
+      .portfolio-grid{grid-template-columns:1fr; grid-template-rows:auto; margin-top:0;}
+      .embed-wrap-soundcloud,.portfolio-box{width:90vw; max-width:300px; height:300px;}
+    }
