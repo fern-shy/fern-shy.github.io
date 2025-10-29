@@ -42,7 +42,7 @@ body {
     overflow: hidden;
     height: 100vh;
     width: 100vw;
-    background-color: hotpink;
+    background-color: rgb(0, 0, 0);
 }
 .youtube-frame {
     
@@ -52,7 +52,7 @@ body {
 
 h2 .section-title {
     margin-top: 0;
-    color: hotpink;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
@@ -102,7 +102,7 @@ h3{
     justify-content: center;
     gap: 24px;
     padding: 12px 0px;
-    background: hotpink;
+    background: rgb(0, 0, 0);
     backdrop-filter: blur(4px);
     z-index: 10;
 }
@@ -162,7 +162,7 @@ h3{
     width: 312px;
     height: 315px;
     box-sizing: border-box;
-    background: rgb(255, 83, 175);
+    background: rgb(255, 255, 255);
     color: white;
     padding: 10px 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -270,7 +270,7 @@ h3{
 
 .embed-wrap-soundcloud,
 .portfolio-box { width:300px; height:300px; box-sizing:border-box; }
-.portfolio-box { background: rgb(255, 83, 175); color:white; padding:10px;font-family:Arial,Helvetica,sans-serif; }
+.portfolio-box { background: rgb(0, 0, 0); color:white; padding:10px;font-family:Arial,Helvetica,sans-serif; }
 
 @media (max-width:650px){
   .portfolio-content{flex-direction:column; align-items:center; gap:10px; margin-top:0px;}
