@@ -23,6 +23,17 @@
     <main>
         <section class="page buy-page">
             <div class="buy-content">
+                <script async
+                src="https://js.stripe.com/v3/buy-button.js">
+                </script>
+
+                <stripe-buy-button
+                buy-button-id="buy_btn_1SzKIrIsSsnGGDGknQYLyHgl"
+                publishable-key="pk_live_51ShFPfIsSsnGGDGkcoBvizzleWCzgJmF0oPzvIV5DT9tpIFId8Xmf0Z9cYuFSFFyZdQwHB3j0Xso8f4p33j1JRlK00jM8NmUnn"
+                >
+                </stripe-buy-button>
+            </div>
+            <div class="buy-content">
                 <div class="embed-wrap">
                     <iframe id="playlist-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?si=7Zpm2zKGvnruO92m&amp;list=PLwFvkGJzyOf44UloByIA2S4iL_NdW5gd8" title="YouTube playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div id="playlist-overlay" class="playlist-overlay" aria-label="Open playlist"></div>
