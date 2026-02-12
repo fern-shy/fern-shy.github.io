@@ -69,6 +69,72 @@ section {
 }
 
 /* ===========================================
+   HOME PAGE (index.html)
+   =========================================== */
+
+.home-body {
+    overflow-y: auto;
+    height: auto;
+}
+
+.home-main {
+    display: block;
+}
+
+.home-hero {
+    position: relative;
+    min-height: 100vh;
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: top center;
+}
+
+.home-bio {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    padding: 60px 20px;
+}
+
+.bio-content {
+    max-width: 600px;
+    text-align: center;
+}
+
+.bio-content p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 0 0 1.5em 0;
+}
+
+.bio-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Scroll indicator arrow */
+.scroll-hint {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2rem;
+    opacity: 0.7;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+    40% { transform: translateX(-50%) translateY(-10px); }
+    60% { transform: translateX(-50%) translateY(-5px); }
+}
+
+/* ===========================================
    BUY PAGE (money.html)
    =========================================== */
 
@@ -178,7 +244,6 @@ section {
     align-items: start;
 }
 
-/* Styles for commented-out portfolio content (keep for future use) */
 .embed-wrap-soundcloud,
 .portfolio-box {
     width: 300px;
@@ -267,5 +332,14 @@ section {
         width: 90vw;
         max-width: 300px;
         height: 300px;
+    }
+
+    /* Home page */
+    .home-bio {
+        padding: 40px 16px;
+    }
+
+    .bio-content p {
+        font-size: 1rem;
     }
 }
