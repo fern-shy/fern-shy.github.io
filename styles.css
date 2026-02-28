@@ -50,6 +50,50 @@ section {
 }
 
 /* ===========================================
+   BINDER TAB NAVIGATION (home page only)
+   =========================================== */
+
+.binder-nav {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    z-index: 100;
+}
+
+.binder-tab {
+    display: block;
+    padding: 12px 20px 12px 16px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 4px 0 0 4px;
+    transform: translateX(50%);
+    transition: transform 0.4s ease, background 0.2s ease;
+    writing-mode: horizontal-tb;
+    white-space: nowrap;
+}
+
+.binder-tab:hover {
+    transform: translateX(0);
+    background: hotpink;
+    color: white;
+}
+
+/* Stagger the tabs like real binder dividers
+.binder-tab:nth-child(1) { margin-right: 0; }
+.binder-tab:nth-child(2) { margin-right: 8px; }
+.binder-tab:nth-child(3) { margin-right: 16px; } */
+
+/* ===========================================
    PAGE LAYOUT
    =========================================== */
 
@@ -82,56 +126,10 @@ section {
 }
 
 .home-hero {
-    position: relative;
     min-height: 100vh;
     background-size: contain;
     background-repeat: repeat;
     background-position: top center;
-}
-
-.home-bio {
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(0, 0, 0);
-    padding: 60px 20px;
-}
-
-.bio-content {
-    max-width: 600px;
-    text-align: center;
-}
-
-.bio-content p {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin: 0 0 1.5em 0;
-}
-
-.bio-content p:last-child {
-    margin-bottom: 0;
-}
-
-/* Scroll indicator arrow */
-.scroll-hint {
-    position: absolute;
-    bottom: 24px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 2rem;
-    opacity: 0.7;
-    animation: bounce 2s infinite;
-    cursor: pointer;
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-    40% { transform: translateX(-50%) translateY(-10px); }
-    60% { transform: translateX(-50%) translateY(-5px); }
 }
 
 /* ===========================================
@@ -334,12 +332,9 @@ section {
         height: 300px;
     }
 
-    /* Home page */
-    .home-bio {
-        padding: 40px 16px;
-    }
-
-    .bio-content p {
-        font-size: 1rem;
+    /* Binder tabs on mobile */
+    .binder-tab {
+        font-size: 10px;
+        padding: 10px 16px 10px 12px;
     }
 }
