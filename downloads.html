@@ -14,7 +14,7 @@
     <header> 
         <nav class="site-nav">
             <a href="index.html">HOME</a>
-            <a href="money.html">$$$</a>
+            <!-- <a href="money.html">$$$</a> -->
             <a href="art.html">ART</a>
             <a href="downloads.html" style="text-decoration: underline;">DOWNLOADS</a>
         </nav>
@@ -30,6 +30,23 @@
             </div>
         </section>
     </main>
+
+    <script>
+    (function() {
+        var check = setInterval(function() {
+            var embeds = document.querySelectorAll('.gumroad-product-embed');
+            var allLoaded = true;
+            embeds.forEach(function(el) {
+                if (el.querySelector('iframe')) {
+                    el.classList.add('loaded');
+                } else {
+                    allLoaded = false;
+                }
+            });
+            if (allLoaded) clearInterval(check);
+        }, 300);
+    })();
+    </script>
 
 </body>
 </html>

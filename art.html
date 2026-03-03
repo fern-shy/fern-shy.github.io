@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="styles.css">
     <title>ART</title>
     <script defer data-domain="fern-shy.github.io" src="https://plausible.io/js/script.js"></script>
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <nav class="site-nav">
             <a href="index.html">HOME</a>
-            <a href="money.html">$$$</a>
+            <!-- <a href="money.html">$$$</a> -->
             <a href="art.html" style="text-decoration: underline;">ART</a>
             <a href="downloads.html">DOWNLOADS</a>
         </nav>
@@ -21,32 +20,80 @@
 
     <main>
         <section class="page portfolio-page">
-            <div class="portfolio-grid">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9vwKQ05UxFw?si=l4eZtl2zY_1BXclR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QiYQL3Hgy-c?si=dRbcSO6OPqSbS2e5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/uaMlBRYoOTg?si=SIB0ZSnQC906m6v7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/HPggyZ0T9tU?si=sBrNvPy7p3UKwzHJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="art-grid">
+
+                <!-- Row 1: embed left, text right -->
+                <div class="art-embed col-1">
+                    <iframe src="https://open.spotify.com/embed/album/0SQfzCVbIFt6wvAHYKH6Hc?utm_source=generator&theme=0"
+                        width="100%" height="352" frameborder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+                <div class="art-text col-2">
+                    <p>My most recent release.</p>
+                </div>
+
+                <!-- Row 2: text left, embed right -->
+                <div class="art-embed col-2">
+                    <iframe src="https://www.youtube.com/embed/QiYQL3Hgy-c"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="art-text col-1">
+                    <p>On the practice of making art.</p>
+                </div>
+
+                <!-- Row 3: embed left, text right -->
+                <div class="art-embed col-1">
+                    <iframe src="https://open.spotify.com/embed/album/3V89ZdEW9YrZRhS9hdOmAx?utm_source=generator&theme=0"
+                        width="100%" height="352" frameborder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+                <div class="art-text col-2">
+                    <p>I produced three songs on Edward Skeletrix's second album &mdash; a double LP that splits itself between two names. It was reviewed by Pitchfork, ranked #44 on The Fader's Best Albums of 2025, and featured in The Guardian's Best Albums list.</p>
+                    <a class="press-link" href="https://pitchfork.com/reviews/albums/edward-skeletrix-museum-music/" target="_blank" rel="noopener">PITCHFORK &rarr;</a>
+                    <a class="press-link" href="https://www.thefader.com/2025/12/08/the-50-best-albums-of-2025" target="_blank" rel="noopener">THE FADER &rarr;</a>
+                    <a class="press-link" href="https://www.theguardian.com/culture/2025/jun/10/the-best-albums-of-2025-so-far" target="_blank" rel="noopener">THE GUARDIAN &rarr;</a>
+                </div>
+
+                <!-- Row 4: text left, embed right -->
+                <div class="art-embed col-2">
+                    <iframe src="https://www.youtube.com/embed/uaMlBRYoOTg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="art-text col-1">
+                    <p>On making your own sounds.</p>
+                </div>
+
+                <!-- Row 5: embed left, text right -->
+                <div class="art-embed col-1">
+                    <iframe src="https://open.spotify.com/embed/track/7GzV9dnPDBhl3WYaXBq9t2?utm_source=generator&theme=0"
+                        width="100%" height="152" frameborder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+                <div class="art-text col-2">
+                    <p>I produced this.</p>
+                </div>
+
+                <!-- Row 6: text left, embed right -->
+                <div class="art-embed col-2">
+                    <iframe src="https://www.youtube.com/embed/LrXnKCJqqwo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="art-text col-1">
+                    <p>I act as the lead role in this.</p>
+                </div>
+
             </div>
         </section>
     </main>
-    <!--
-    <main>
-        <section class="page portfolio-page">
-            <div class="portfolio-grid">
-                <img src="img/2.10.25 soon8.png" alt="soon image" class="portfolio-img" />
-                <div class="embed-wrap-soundcloud">
-                    <iframe id="soundcloud-embed" width="300" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1973478200&color=%23d81c89&auto_play=false&hide_related=false&show_comments=true&show_user=false&show_reposts=false&show_teaser=true"></iframe>
-                </div>
-                <div class="portfolio-box">
-                    <h2>Who Are You Really?</h2>
-                    <h3>by Lush Soma and fern_shy</h3>
-                    <p>Released February 22nd 2025</p>
-                    <p>An album about self-destruction, dreams (nightmares),<br>and the world in the palm of your hands.</p>
-                </div>
-                <img src="img/2.18.25 tracklist.png" alt="tracklist image" class="portfolio-img" />
-            </div>
-        </section>
-    </main>
-    -->
+
 </body>
 </html>
