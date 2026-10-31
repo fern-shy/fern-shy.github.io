@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <title>pandoras box</title>
+    <script defer data-domain="fern-shy.github.io" src="https://plausible.io/js/script.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="site-nav">
+            <a href="index.html">HOME</a>
+            <a href="pain.html">ART</a>
+            <a href="downloads.html">DOWNLOADS</a>
+            <a href="pandoras-box.html" style="text-decoration: underline;">pandoras box</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page pandora-page">
+            <a class="pandora-box" href="https://drive.google.com/drive/folders/1Xvd6ktC0QCZUu9Z__DVcdR-5qO-q2RyA" target="_blank" rel="noopener noreferrer" aria-label="Open Pandora's box">
+                <img class="pandora-eyes" src="img/1.05.24%20eyes.gif" alt="">
+            </a>
+        </section>
+    </main>
+
+    <script>
+        const eyes = document.querySelector('.pandora-eyes');
+        const src = eyes.getAttribute('src');
+        const showMs = 1600;
+        const hideMs = 4000;
+
+        function showEyes() {
+            eyes.style.visibility = 'visible';
+            eyes.src = '';
+            eyes.src = src;
+            window.setTimeout(hideEyes, showMs);
+        }
+
+        function hideEyes() {
+            eyes.style.visibility = 'hidden';
+            window.setTimeout(showEyes, hideMs);
+        }
+
+        showEyes();
+    </script>
+
+</body>
+</html>

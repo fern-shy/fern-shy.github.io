@@ -332,6 +332,37 @@ section {
     text-decoration: underline;
 }
 
+.pain-prose {
+    grid-column: 2 / -1;
+    align-self: start;
+    justify-content: flex-start;
+    max-width: 40rem;
+}
+
+/* ===========================================
+   PANDORAS BOX
+   =========================================== */
+
+.pandora-page {
+    overflow: hidden;
+    padding-top: 48px;
+    box-sizing: border-box;
+}
+
+.pandora-box {
+    display: block;
+    width: min(calc(100vw - 80px), calc(100vh - 128px));
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.pandora-eyes {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 /* ===========================================
    RESPONSIVE - TABLET (max-width: 900px)
    =========================================== */
@@ -346,6 +377,10 @@ section {
         column-gap: 32px;
         width: calc(100vw - 48px);
     }
+
+    .pain-prose {
+        grid-column: 2;
+    }
 }
 
 /* ===========================================
@@ -354,11 +389,17 @@ section {
 
 @media (max-width: 650px) {
     .site-nav {
-        gap: 13px;
+        gap: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     .site-nav a {
-        font-size: 3.5vw;
+        font-size: 2.8vw;
+    }
+
+    .pandora-box {
+        width: min(calc(100vw - 40px), calc(100vh - 96px));
     }
 
     /* Buy page */
@@ -396,7 +437,7 @@ section {
         row-gap: 24px;
     }
 
-    .col-1, .col-2 {
+    .col-1, .col-2, .pain-prose {
         grid-column: 1;
     }
 
